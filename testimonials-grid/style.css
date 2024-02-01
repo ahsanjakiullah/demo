@@ -1,0 +1,205 @@
+:root{
+    --moderateViolet: #7541c8;
+    --grayishBlue: hsl(217, 19%, 35%);
+    --blackishBlue: hsl(219, 29%, 14%);
+    --fff: hsl(0, 0%, 100%);
+    --lightGray: hsl(0, 0%, 81%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: #bcc0c4;
+}
+#container{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 50px auto;
+    background: var(lightGray);
+}
+#container > div{
+    width: 100%;
+    height:auto;
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+/* details section */
+.name{
+    font-size: 1rem;
+    color: var(--fff);
+}
+.title{
+    font-size: 0.75rem;
+    color: var(--fff);
+    opacity: 50%;
+    margin-top: 0.5rem;
+}
+.heading p{
+    font-size: 1.5rem;
+    color: var(--fff);
+    font-weight: 600;
+}
+.description p{
+    font-size: 0.85rem;
+    color: var(--fff);
+    opacity: 0.7;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.profile{
+    display: flex;
+    gap: 1.5rem;
+}
+.profile .profile-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--grayishBlue);
+}
+.profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin: auto auto;
+}
+.profile .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+/* individual card design */
+
+/* number one card */
+.one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--moderateViolet);
+    position: relative;
+}
+.one > img{
+    width:15%;
+    height:30%;
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+
+}
+
+.one  .heading{
+    z-index: 1;
+}
+
+
+/* two number card */
+.two{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: var(--grayishBlue);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+
+/* three number card */
+.five{
+    grid-column:4/5;
+    grid-row: 1/3;
+    background-color: var(--fff);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.five .name{
+    font-size: 1rem;
+    color: var(--grayishBlue);
+}
+.five .title{
+    font-size: 0.75rem;
+    color: var(--grayishBlue);
+    opacity: 50%;
+    margin-top: 0.5rem;
+    
+}
+.five .heading p{
+    font-size: 1.5rem;
+    color: var(--grayishBlue);
+    font-weight: 600;
+}
+.five .description p{
+    font-size: 0.85rem;
+    color: var(--grayishBlue);
+    opacity: 0.7;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* four number card */
+.three{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--fff);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.three .name{
+    font-size: 1rem;
+    color: var(--grayishBlue);
+}
+.three .title{
+    font-size: 0.75rem;
+    color: var(--grayishBlue);
+    opacity: 50%;
+    margin-top: 0.5rem;
+    
+}
+.three .heading p{
+    font-size: 1.5rem;
+    color: var(--grayishBlue);
+    font-weight: 600;
+}
+.three .description p{
+    font-size: 0.85rem;
+    color: var(--grayishBlue);
+    opacity: 0.7;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* five number card */
+.four{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: var(--blackishBlue);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
